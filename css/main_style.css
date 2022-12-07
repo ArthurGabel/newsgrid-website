@@ -1,0 +1,271 @@
+html {
+  font-size: 62.5%;
+}
+
+:root {
+  --primary-color: #c72727;
+  --secondary-color: #f99500;
+  --light-color: #fff;
+  --mid-color: #333;
+  --dark-color: #000;
+  --max-width: 1100px;
+}
+
+.category {
+  --sports-color: #f99500;
+  --ent-color: #a66bbe;
+  --tech-color: #009cff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font: normal 1.6rem/1.6 'Lato', sans-serif;
+  background: #dadada;
+  color: var(--dark-color-1);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font: normal 1.6rem/1.2 'Staatliches', sans-serif;
+  margin-bottom: 0.8rem;
+}
+
+p { 
+  margin-bottom: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color:var(--dark-color-1);
+}
+
+ul {
+  list-style: none;
+}
+
+img {
+  width: 100%
+}
+
+/* Navgation */
+#main-nav {
+  background: var(--light-color);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+#main-nav .container {
+  display: grid;
+  grid-template-columns: 4fr 2fr 1fr;
+  align-items: center;
+  padding: 1.6rem 3.2rem;
+}
+
+#main-nav .logo {
+  height: 5.6rem;
+  width: auto;
+}
+
+#main-nav .social {
+  justify-self: center;
+}
+
+#main-nav .social a {
+  color: #777;
+  font-size: 3.2rem;
+  margin: 0 0.4rem;
+}
+
+#main-nav .nav {
+  justify-self: center;
+  display: flex;
+}
+
+#main-nav .nav a {
+  font-weight: bold;
+  padding: 0.8rem 1.6rem;
+  margin: 0.8rem;
+}
+
+#main-nav .nav a.current {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+#main-nav .nav .btn:hover {
+  background: var(--primary-color);
+  color: var(--light-color);
+  opacity: 1;
+}
+
+/* Showcase */
+#showcase {
+  position: relative;
+  background: url(../img/featured.jpg) no-repeat center center/cover;
+  color: var(--light-color);
+  height: 60vh;
+}
+
+#showcase::before {
+  content: '';
+  position: absolute;
+  background: #333;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0.4;
+}
+
+#showcase .container {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#showcase .showcase-content {
+  z-index: 1;
+}
+
+#showcase .showcase-content h1 {
+  font-size: 5.6rem;
+}
+
+#showcase .showcase-content h5 {
+  font-size: 2.4rem;
+}
+
+#showcase .showcase-content p {
+  width: 50%;
+}
+
+#showcase .showcase-content a:hover {
+  background: var(--secondary-color);
+  opacity: 1;
+}
+
+/* Articles Cards */
+#home-articles h2 {
+  font-size: 3.2rem;
+}
+
+#home-articles h3 {
+  font-size: 2.4rem;
+}
+
+#home-articles img {
+  object-fit: no-repeat center center/cover;
+}
+
+#home-articles a:hover {
+  opacity: 0.5;
+}
+
+#home-articles .card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1.6rem;
+  align-items: center;
+  justify-content: center;
+}
+
+#home-articles .article-1 {
+  grid-column: 1 / span 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.6rem;
+  align-items: center;
+}
+
+#home-articles .article-3,
+#home-articles .article-4,
+#home-articles .article-5 {
+  display: grid;
+  grid-template-rows: auto;
+  gap: 1.6rem;
+}
+
+#home-articles .article-7 {
+  grid-column: 2 / span 2;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.6rem;
+  align-items: center;
+}
+
+/* Footer */
+#footer p {
+  font-size: 1.4rem;
+  margin-bottom: 0.8rem;
+}
+
+#footer h4 {
+  font-size: 2rem;
+}
+
+#footer .footer-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.6rem;
+}
+
+#footer .about .logo {
+ height: 4rem;
+ width: auto;
+}
+
+#footer .email-newsletter .email {
+  height: 3.2rem;
+  width: 100%;
+  margin-bottom: 0.8rem;
+}
+
+#footer .email-newsletter .email:focus {
+  outline: none;
+}
+
+#footer .email-newsletter .btn {
+  width: 100%;
+  height: 3.2rem
+}
+
+#footer .club h4 {
+  font-size: 2.4rem;
+}
+
+#footer .copy {
+  grid-column: 1 / span 4 ;
+  background: #444;
+  padding: 0.8rem;
+  text-align: center;
+}
+
+#footer .copy p {
+  margin-bottom: 0;
+}
+
+/* Article Page */
+#article-page .meta {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#article-page .meta span {
+  font-weight: bold;
+}
+
+/* Sidebar */
+#sidebar h2 {
+  font-size: 2.4rem;
+}
+
+#sidebar .list a:hover {
+  color: var(--secondary-color) !important;
+}
