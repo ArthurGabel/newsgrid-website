@@ -1,0 +1,102 @@
+/* Container */
+.container {
+  max-width: var(--max-width);
+  margin: auto;
+  padding: 0 3.2rem;
+  overflow: hidden;
+}
+
+.page-grid-container {
+  display: grid;
+  grid-template-columns: 5fr 2fr;
+  gap: 3.2rem;
+}
+
+.page-grid-container > *:first-child {
+  grid-row: 1 / span 3;
+}
+
+/* Card */
+.card {
+  background: var(--light-color);
+  padding: 1.6rem;
+  height: 100%;
+}
+
+/* Categories */
+.category {
+  display: inline-block;
+  color: var(--light-color);
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 0.4rem 0.8rem;
+  border-radius: 20px;
+  margin-bottom: 0.8rem;
+}
+
+.category-sports { background: var(--sports-color) }
+.category-ent { background: var(--ent-color) }
+.category-tech { background: var(--tech-color) }
+
+/* Btn */
+.btn {
+  display: inline-block;
+  background: var(--mid-color);
+  color: var(--light-color);
+  padding: 0.8rem 1.6rem;
+  cursor: pointer;
+  border: none;
+}
+
+.btn-light { background: #dadada; color: var(--dark-color) }
+.btn-primary { background: var(--primary-color); }
+.btn-secondary { background: var(--secondary-color); }
+
+.btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+/* Backgorund */
+.bg-primary {
+  background: var(--primary-color);
+  color: var(--light-color);
+}
+
+.bg-secondary {
+  background: var(--secondary-color);
+  color: var(--light-color);
+}
+
+.bg-dark {
+  background: var(--mid-color);
+  color: var(--light-color);
+}
+
+/* Padding */
+.p-1 { padding: 2.4rem; }
+.p-2 { padding: 3.2rem;}
+.p-3 { padding: 4.8rem;}
+
+.py-1 { padding: 2.4rem 0; }
+.py-2 { padding: 3.2rem 0;}
+.py-3 { padding: 4.8rem 0;}
+
+/* Font-size */
+.l-heading { font-size: 4rem; }
+
+/* List */
+.list li {
+  margin-bottom: 1.2rem;
+  padding-bottom: 0.4rem ;
+  border-bottom: #777 dotted 2px;
+}
+
+.list li a:hover{
+  opacity: 0.5;
+}
