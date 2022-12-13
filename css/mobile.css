@@ -1,0 +1,187 @@
+p {
+ font-size: 1.4rem; 
+}
+
+/* Navbar */
+#main-nav .social {
+  display: none;
+}
+
+#main-nav .container {
+  grid-template-columns: 5fr 2fr;
+}
+
+#main-nav .logo {
+  height: 4.6rem;
+}
+
+#main-nav .nav a {
+  font-size: 1.4rem;
+}
+
+/* Showcase */
+#showcase .showcase-content h1 {
+  font-size: 4.6rem;
+}
+
+#showcase .showcase-content h5 {
+  font-size: 1.6rem;
+}
+
+#showcase .showcase-content p {
+  width: 70%;
+}
+
+#showcase .showcase-content a {
+  font-size: 1.4rem;
+}
+
+/* Articles */
+#home-articles h2 {
+  font-size: 2.4rem;
+}
+
+#home-articles h6 {
+  font-size: 1.4rem;
+}
+
+#home-articles .card-container {
+  grid-template-columns: 1fr;
+}
+
+#home-articles .article-1,
+#home-articles .article-7 {
+  display: block;
+}
+
+#home-articles .article-2,
+#home-articles .article-3,
+#home-articles .article-4,
+#home-articles .article-5, 
+#home-articles .article-6, 
+#home-articles .article-7 {
+  grid-column: 1 / span 2;
+}
+
+/* Footer */
+#footer h4 {
+  font-size: 1.6rem;
+}
+
+#footer .footer-container {
+grid-template-columns: repeat(2, 1fr);
+gap: 0.8rem;
+}
+
+#footer .copy {
+  grid-column: 1 / span 2 ;
+}
+
+#footer a {
+  font-size: 1.4rem;
+}
+
+#footer .club .btn {
+  width: 100%;
+  text-align: center;
+  padding: 0.6rem 1.6rem;
+}
+
+/* Utility */
+.page-grid-container {
+  grid-template-columns: 1fr;
+}
+
+/* Inner Pages */
+#article-page h1 {
+  font-size: 3.2rem;
+}
+
+#about-page h1 {
+  font-size: 3.2rem;
+}
+
+@media (max-width: 500px) {
+  p {
+    font-size: 1.4rem;
+  }
+
+  /* Navbar */
+  #main-nav .container {
+    grid-template-columns: 5fr 1fr;
+    gap: 1.2rem;
+    padding: 1.2rem 1.6rem;
+  }
+
+  #main-nav .logo {
+    height: 3.2rem;
+  }
+
+  #main-nav .nav a {
+    font-size: 1.4rem;
+    font-weight: lighter;
+    padding: 0.4rem 0.4rem;
+    margin: 0.2rem;
+  }
+
+  /* Showcase */
+  #showcase .showcase-content h1 {
+    font-size: 2.4rem;
+  }
+
+  #showcase .showcase-content p {
+    width: 100%;
+  }
+
+  #showcase .showcase-content h5,
+  #showcase .showcase-content a {
+    font-size: 1.2rem;
+  }
+
+  /* Articles */
+  #home-articles h2 {
+    font-size: 2rem;
+  }
+
+  #home-articles h3{
+    font-size: 1.8rem;
+  }
+
+  /* Footer */
+  #footer .footer-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  #footer .copy {
+    grid-column: 1 / span 1 ;
+  }
+
+  /* Inner Pages */
+  #article-page h1 {
+    font-size: 2.4rem;
+  }
+  
+  #article-page h2 {
+    font-size: 1.8rem;
+  }
+
+  #article-page a {
+    font-size: 1.4rem;
+  }
+
+  #article-page .category{
+    display: none;
+  }
+  
+  #about-page h1 {
+    font-size: 2.4rem;
+  }
+  
+  #about-page h2 {
+    font-size: 1.8rem;
+  }
+
+  #about-page a {
+    font-size: 1.4rem;
+  }
+}
